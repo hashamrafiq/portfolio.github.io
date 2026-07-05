@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Hasham — Frontend Developer</title>
+  <meta name="description"
+    content="Muhammad Hasham — Frontend Developer with 4 years experience in HTML, CSS, SCSS, Bootstrap, Tailwind CSS, JavaScript and React.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assests/css/portfolio.css">
+</head>
+
+<body>
+
+
+
+  <header class="position-sticky top-0 z-3 bg-dark bg-opacity-75 border-bottom border-secondary">
+    <nav class="container navbar navbar-expand-md px-4 py-3 mx-auto">
+
+      <!-- Logo -->
+      <a class="navbar-brand fw-bold text-white fs-6" href="#top">
+        hasham<span class="text-success">.dev</span>
+      </a>
+
+      <!-- Toggler (mobile only) -->
+      <button class="navbar-toggler border-0 text-white fs-3 d-md-none" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+        ☰
+      </button>
+
+      <!-- Desktop Menu -->
+      <div class="collapse navbar-collapse justify-content-end d-none d-md-flex">
+        <ul class="navbar-nav align-items-center gap-4">
+
+          <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link text-white" href="#education">Education</a></li>
+
+          <li class="nav-item">
+            <a class="btn btn-success btn-sm fw-semibold px-3" href="#contact">
+              Contact
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Offcanvas Mobile Menu -->
+  <div class="offcanvas offcanvas-end bg-dark text-white" tabindex="-1" id="mobileMenu">
+
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title fw-bold">
+        hasham<span class="text-success">.dev</span>
+      </h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+    </div>
+
+    <div class="offcanvas-body">
+      <div class="d-flex flex-column gap-3">
+
+        <a class="text-secondary text-decoration-none" href="#about">About</a>
+        <a class="text-secondary text-decoration-none" href="#skills">Skills</a>
+        <a class="text-secondary text-decoration-none" href="#experience">Experience</a>
+        <a class="text-secondary text-decoration-none" href="#projects">Projects</a>
+        <a class="text-secondary text-decoration-none" href="#education">Education</a>
+
+        <a class="btn btn-success mt-3" href="#contact">Contact</a>
+
+      </div>
+    </div>
+  </div>
+
+  <main id="top">
+    <section class="hero py-5 overflow-hidden position-relative ">
+      <div class="container py-lg-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 ">
+            <div class="text-success small text-uppercase fw-semibold mb-3">
+              Available for Frontend Roles
+            </div>
+            <h1 class="hero-title fw-bold text-white mb-4">
+              Muhammad Hasham builds interfaces that feel
+              <span class="accent">inevitable</span>,
+              not assembled.
+            </h1>
+            <h4 class="hero-role mb-3">
+              const role = "Frontend Developer"
+              <span class="cursor"></span>
+            </h4>
+            <p class="hero-sub fs-5 mb-4">
+              4 years turning designs into fast, responsive,
+              production-ready UI — HTML5, CSS3/SCSS,
+              Bootstrap, Tailwind CSS, JavaScript and React.
+            </p>
+            <div
+              class="d-flex flex-wrap row-gap-3 column-gap-3 justify-content-md-start justify-content-center mb-lg-5 mb-4">
+              <a href="#projects" class="btn btn-ghost px-md-4 px-2 py-2 fw-medium">
+                View my work
+              </a>
+              <a href="Muhammad_Hasham_CV.pdf" class="btn btn-ghost px-md-4 px-2 py-2 fw-medium">
+                Download CV
+              </a>
+              <a href="#contact" class="btn btn-ghost px-md-4 px-2 py-2 fw-medium">
+                Get in touch
+              </a>
+            </div>
+
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="playground px-lg-4 px-3 py-4 rounded-4">
+              <div class="playground-label d-flex align-items-center gap-2 mb-4">
+                stack.render() — live output, not screenshots
+              </div>
+              <div
+                class="d-flex flex-wrap gap-4 column-gap-3 column-gap-md-4 justify-content-center justify-content-md-start">
+                <div class="d-flex flex-column gap-2">
+                  <span class="swatch-tag">
+                    Bootstrap
+                  </span>
+                  <button class="demo-btn-bs btn btn-primary btn-sm px-3 py-2">
+                    Primary Action
+                  </button>
+                </div>
+                <div class="d-flex flex-column gap-2">
+                  <span class="swatch-tag">
+                    Tailwind
+                  </span>
+                  <span class="demo-pill-tw rounded-pill px-3 py-2 fw-semibold">
+                    ● shipped
+                  </span>
+                </div>
+                <div class="d-flex flex-column gap-2">
+                  <span class="swatch-tag">
+                    SCSS
+                  </span>
+                  <div class="demo-card-scss rounded-3 px-3 py-2">
+                    $gradient-card { … }
+                  </div>
+                </div>
+                <div class="d-flex flex-column gap-2">
+                  <span class="swatch-tag">
+                    React
+                  </span>
+                  <div class="demo-toggle d-flex align-items-center gap-2">
+                    <div class="track">
+                      <div class="knob"></div>
+                    </div>
+                    <span>isDarkMode</span>
+                  </div>
+                </div>
+                <div class="d-flex flex-column gap-2">
+                  <span class="swatch-tag">
+                    JavaScript
+                  </span>
+                  <div class="demo-chip d-flex align-items-center gap-2 rounded-3 px-3 py-2">
+                    <button aria-hidden="true">−</button>
+                    <span>count: 4</span>
+                    <button aria-hidden="true">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about  -->
+    <section class="about py-5" id="about">
+      <div class="container py-lg-5">
+        <div class="row align-items-start justify-content-lg-between row-gap-4">
+          <!-- Left Content -->
+          <div class="col-lg-6">
+            <div class="mb-4">
+              <div class="section-eyebrow text-uppercase mb-2">
+                01 About
+              </div>
+              <h2 class="section-title mb-4">
+                Four years of shipping interfaces that hold up.
+              </h2>
+            </div>
+            <div class="about-text">
+              <p class="mb-3">
+                I'm a frontend developer with 4 years of hands-on experience building responsive, accessible,
+                and performant web interfaces — from marketing pages to application dashboards.
+              </p>
+              <p class="mb-3">
+                My day-to-day toolkit is HTML5, CSS3 and SCSS for structure and styling, Bootstrap and Tailwind
+                CSS for fast, consistent UI systems, and JavaScript (ES6+) with React for interactive,
+                component-driven front ends.
+              </p>
+              <p class="mb-0">
+                I graduated with a Bachelor's degree in Computer Science from Virtual University of Pakistan while
+                building four years of hands-on experience in frontend development.
+              </p>
+            </div>
+          </div>
+          <!-- Right Stats -->
+          <div class="col-lg-5">
+            <div class="row g-1 stats-wrapper">
+              <div class="col-6">
+                <div class="stat h-100 p-4">
+                  <div class="stat-num">4+</div>
+                  <div class="stat-label">Years Experience</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="stat h-100 p-4">
+                  <div class="stat-num">Virtual</div>
+                  <div class="stat-label">University </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="stat h-100 p-4">
+                  <div class="stat-num">6</div>
+                  <div class="stat-label">Core Technologies</div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="stat h-100 p-4">
+                  <div class="stat-num">100%</div>
+                  <div class="stat-label">Responsive Builds</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skills -->
+    <section class="skills py-5" id="skills">
+      <div class="container">
+        <div class="section-head text-center mb-lg-5 mb-4">
+          <div class="section-eyebrow">02 Skills</div>
+          <h2 class="section-title">Tools I build with every day.</h2>
+        </div>
+
+        <div class="row row-gap-4">
+          <!-- Skill Group 1 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="skill-group h-100 p-4">
+              <h3>Markup & Styling</h3>
+
+              <div class="d-flex flex-wrap gap-2">
+                <span class="tag p-2 rounded-2">HTML5</span>
+                <span class="tag p-2 rounded-2">CSS3</span>
+                <span class="tag p-2 rounded-2">SCSS / Sass</span>
+                <span class="tag p-2 rounded-2">Responsive Design</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Group 2 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="skill-group h-100 p-4">
+              <h3>UI Frameworks</h3>
+
+              <div class="d-flex flex-wrap gap-2">
+                <span class="tag mint p-2 rounded-2">Bootstrap</span>
+                <span class="tag mint p-2 rounded-2">Tailwind CSS</span>
+                <span class="tag mint p-2 rounded-2">Component Design</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Group 3 -->
+          <div class="col-lg-4 col-md-6">
+            <div class="skill-group h-100 p-4">
+              <h3>Scripting & Tools</h3>
+
+              <div class="d-flex flex-wrap gap-2">
+                <span class="tag p-2 rounded-2">JavaScript (ES6+)</span>
+                <span class="tag p-2 rounded-2">React </span>
+                <span class="tag p-2 rounded-2">Git & GitHub</span>
+                <span class="tag p-2 rounded-2">Cross-browser Testing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience py-5" id="experience">
+      <div class="container py-lg-5">
+        <div class="section-head text-center mb-lg-5 mb-4">
+          <div class="section-eyebrow">03 Experience</div>
+          <h2 class="section-title">Where I've put these skills to work.</h2>
+        </div>
+
+        <div class="timeline">
+
+          <div class="tl-item pb-5" data-index="01">
+
+            <div class="tl-head d-flex justify-content-between align-items-baseline flex-wrap gap-2">
+              <div class="tl-role">Frontend Developer</div>
+              <div class="tl-date">[2022] — Present</div>
+            </div>
+
+            <div class="tl-company mt-1">[Ccjk Technologies]</div>
+
+            <ul class="tl-list mt-3 ps-3 mb-0">
+              <li class="mb-2">
+                Built and maintained responsive UI using HTML, SCSS,
+                Bootstrap and Tailwind CSS.
+              </li>
+              <li class="mb-2">
+                Converted Figma/Adobe XD designs into pixel-perfect pages.
+              </li>
+              <li>
+                Developed reusable React components.
+              </li>
+            </ul>
+          </div>
+
+          <div class="tl-item" data-index="02">
+
+            <div class="tl-head d-flex justify-content-between align-items-baseline flex-wrap gap-2">
+              <div class="tl-role">WordPress Developer</div>
+              <div class="tl-date">2021 — Present</div>
+            </div>
+
+            <div class="tl-company mt-1">[Ccjk Technologies]</div>
+
+            <ul class="tl-list mt-3 ps-3 mb-0">
+              <li class="mb-2">
+                Developed and maintained responsive WordPress websites using HTML5, CSS3, Bootstrap, JavaScript, and
+                Elementor.
+              </li>
+
+              <li class="mb-2">
+                Converted Figma and Adobe XD designs into pixel-perfect, mobile-friendly WordPress pages.
+              </li>
+
+              <li class="mb-2">
+                Customized themes and templates while ensuring cross-browser compatibility and responsive layouts.
+              </li>
+
+              <li class="mb-2">
+                Optimized website performance, page speed, SEO structure, and accessibility to improve user experience.
+              </li>
+
+              <li>
+                Collaborated with UI/UX designers, backend developers, and QA teams to deliver high-quality websites on
+                time.
+              </li>
+            </ul>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+     Projects Section
+========================= -->
+    <section class="projects py-5" id="projects">
+      <div class="container py-lg-5">
+
+        <!-- Section Heading -->
+        <div class="row section-head justify-content-center text-center mb-5">
+          <div class="col-xxl-9 col-xl-10 col-lg-12">
+
+            <div class="section-eyebrow mb-3">
+              04 Projects
+            </div>
+
+            <h2 class="section-title fw-bold">
+              Featured Projects
+            </h2>
+
+            <p class="section-desc mb-0">
+              A collection of real-world projects showcasing responsive frontend development,
+              WordPress theme customization, interactive user interfaces, and modern web
+              technologies including HTML, CSS, Bootstrap, JavaScript, React, and WordPress.
+            </p>
+
+          </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="row row-gap-4">
+
+          <!-- =========================
+                 Project 1
+            ========================== -->
+          <div class="col-lg-4 col-md-6">
+            <div class="project-card h-100 d-flex flex-column">
+
+              <div class="project-thumb d-flex align-items-center justify-content-center text-white py-5 thumb-1">
+                <span>&lt;Marshub /&gt;</span>
+              </div>
+
+              <div class="project-body p-4 d-flex flex-column gap-3 h-100">
+
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3 class="project-title mb-0">
+                    Marshub
+                  </h3>
+
+                  <span class="badge bg-success">
+                    Live
+                  </span>
+                </div>
+
+                <p class="project-desc mb-0">
+                  Developed and maintained a live WordPress website with custom theme
+                  customization, responsive layouts, JavaScript-powered interactions,
+                  reusable UI components, and performance-focused frontend development.
+                </p>
+
+                <div class="project-tags d-flex flex-wrap gap-2">
+                  <span>WordPress</span>
+                  <span>JavaScript</span>
+                  <span>Bootstrap</span>
+                  <span>CSS3</span>
+                  <span>Responsive</span>
+                </div>
+
+                <div class="project-links d-flex gap-3 mt-auto">
+                  <a href="https://www.marshub.com/" target="_blank">
+                    Live Site →
+                  </a>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <!-- =========================
+                 Project 2
+            ========================== -->
+          <div class="col-lg-4 col-md-6">
+            <div class="project-card h-100 d-flex flex-column">
+
+              <div class="project-thumb d-flex align-items-center justify-content-center text-white py-5 thumb-2">
+                <span>&lt;CCJK /&gt;</span>
+              </div>
+
+              <div class="project-body p-4 d-flex flex-column gap-3 h-100">
+
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3 class="project-title mb-0">
+                    CCJK
+                  </h3>
+
+                  <span class="badge bg-success">
+                    Live
+                  </span>
+                </div>
+
+                <p class="project-desc mb-0">
+                  Contributed to a multilingual WordPress website by implementing custom
+                  frontend features, theme customization, responsive layouts, and
+                  JavaScript functionality to improve user experience across devices.
+                </p>
+
+                <div class="project-tags d-flex flex-wrap gap-2">
+                  <span>WordPress</span>
+                  <span>JavaScript</span>
+                  <span>Bootstrap</span>
+                  <span>HTML5</span>
+                  <span>Responsive</span>
+                </div>
+
+                <div class="project-links d-flex gap-3 mt-auto">
+                  <a href="https://www.ccjk.com/" target="_blank">
+                    Live Site →
+                  </a>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+          <!-- =========================
+                 Project 3
+            ========================== -->
+          <div class="col-lg-4 col-md-6">
+            <div class="project-card h-100 d-flex flex-column">
+
+              <div class="project-thumb d-flex align-items-center justify-content-center text-white py-5 thumb-3">
+                <span>&lt;Portfolio /&gt;</span>
+              </div>
+              <div class="project-body p-4 d-flex flex-column gap-3 h-100">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h3 class="project-title mb-0">
+                    Personal Portfolio
+                  </h3>
+                  <span class="badge bg-primary">
+                    Personal
+                  </span>
+                </div>
+                <p class="project-desc mb-0">
+                  Designed and developed a fully responsive portfolio website to showcase
+                  professional experience, technical skills, live projects, and frontend
+                  expertise using modern web technologies and clean UI principles.
+                </p>
+                <div class="project-tags d-flex flex-wrap gap-2">
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                  <span>Bootstrap</span>
+                  <span>JavaScript</span>
+                  <span>Responsive</span>
+                </div>
+                <div class="project-links d-flex gap-3 mt-auto">
+                  <a href="https://your-portfolio-link.com" target="_blank">
+                    Live Demo →
+                  </a>
+                  <a href="https://github.com/yourusername" target="_blank">
+                    GitHub →
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- education -->
+    <section class="education py-5" id="education">
+      <div class="container py-lg-5">
+        <div class="section-head mb-lg-5 mb-4 pb-lg-0 pb-2 text-lg-start text-center">
+          <div class="section-eyebrow text-uppercase mb-2">
+            05 Education
+          </div>
+          <h2 class="section-title mb-0">
+            Academic Foundation
+          </h2>
+        </div>
+        <div class="edu-card rounded-4 p-4 p-lg-5 rounded-3">
+          <div class="row align-items-center row-gap-4 w-100">
+            <div class="col-lg-8  text-lg-start text-center ">
+              <h3 class="mb-3 text-white">
+                Bachelor of Science in Computer Science
+              </h3>
+              <h6 class="text-success mb-3">
+                Virtual University of Pakistan
+              </h6>
+              <p class="col-xxl-8 col-xl-10 cl-lg-12 mb-0">
+                Building a strong foundation in computer science while
+                gaining four years of professional frontend development
+                experience delivering responsive and scalable web
+                applications.
+              </p>
+            </div>
+            <div class="col-lg-4 text-lg-end text-center">
+              <span class="edu-badge py-2 px-3 rounded-3 d-inline-block">
+                Computer Science
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<footer class="footer py-5" id="contact">
+  <div class="container pt-lg-5">
+    <!-- Contact Head -->
+    <div class="contact-head">
+      <div class="section-eyebrow mb-2">
+        06 Contact
+      </div>
+      <h2 class="fw-bold mb-3">
+        Let’s build something solid together.
+      </h2>
+      <p class="mb-lg-5 mb-4">
+        Open to frontend developer roles — full-time, remote or hybrid.
+        Feel free to reach out via email or LinkedIn. I usually respond within a day.
+      </p>
+      <!-- Contact Actions -->
+      <div class="contact-actions d-flex gap-3 flex-wrap">
+        <a href="mailto:muhammadhashamofficial@gmail.com" class="btn btn-primary">
+          Email Me
+        </a>
+        <a href="https://www.linkedin.com/in/muhammadhashamrafeeq" target="_blank" class="btn btn-ghost">
+          LinkedIn
+        </a>
+        <a href="https://github.com/your-github" target="_blank" class="btn btn-ghost">
+          GitHub
+        </a>
+      </div>
+    </div>
+    <!-- Footer Bottom -->
+    <div class="footer-bottom mt-lg-5 mt-4 pt-4 text-center">
+      © <span id="year"></span> Muhammad Hasham. Built with HTML, CSS & JavaScript.
+    </div>
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,383 @@
+/* =========================
+   ROOT VARIABLES
+========================= */
+:root {
+  --ink: #14171f;
+  --ink-soft: #1b1f2a;
+  --ink-line: #2a2f3d;
+
+  --paper: #f6f6f3;
+  --paper-alt: #ecece7;
+  --paper-line: #dededa;
+
+  --indigo: #5b5fef;
+  --indigo-soft: #eeeefd;
+
+  --mint: #2fbe8f;
+  --slate: #565d6b;
+
+  --white: #ffffff;
+
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+/* =========================
+   RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--paper);
+  color: var(--ink);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* =========================
+   UTILITIES
+========================= */
+.text-mono { font-family: var(--font-mono); }
+.text-display { font-family: var(--font-display); }
+.text-muted { color: var(--slate); }
+
+.hover-up {
+  transition: 0.2s ease;
+}
+
+.hover-up:hover {
+  transform: translateY(-2px);
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+.logo {
+  font-family: var(--font-display);
+  letter-spacing: -0.01em;
+}
+
+.logo span {
+  color: var(--mint);
+}
+
+.nav-links a:hover {
+  color: #fff !important;
+  transition: 0.15s ease;
+}
+
+/* =========================
+   HERO
+========================= */
+.hero {
+  background: var(--ink);
+  color: var(--white);
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  line-height: 1.1;
+}
+
+.hero-role {
+  font: clamp(1rem, 2vw, 1.25rem) var(--font-mono);
+}
+
+.hero-sub {
+  color: #a7adbb;
+  max-width: 650px;
+}
+
+.accent {
+  color: var(--indigo);
+}
+
+/* cursor animation */
+.cursor {
+  width: 8px;
+  height: 1em;
+  margin-left: 2px;
+  display: inline-block;
+  background: var(--mint);
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.btn {
+  transition: 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-ghost {
+  color: var(--white);
+  border: 1px solid var(--ink-line);
+  background: transparent;
+}
+
+.btn-ghost:hover {
+  background: #fff;
+  color: var(--ink);
+}
+
+/* =========================
+   SECTIONS
+========================= */
+section {
+  padding: 88px 0;
+}
+
+.section-head {
+  margin-bottom: 48px;
+}
+
+.section-eyebrow {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--indigo);
+}
+
+.section-eyebrow::before {
+  content: "// ";
+  color: #b9bbd1;
+}
+
+.section-desc {
+  color: var(--slate);
+}
+
+/* =========================
+   ABOUT
+========================= */
+.about {
+  background: var(--paper);
+}
+
+.about-text p {
+  color: #333a47;
+}
+
+.stat {
+  background: var(--white);
+}
+
+.stat-num {
+  font: 700 clamp(1.8rem, 4vw, 2.2rem) var(--font-display);
+  color: var(--indigo);
+}
+
+.stat-label {
+  font: 12px var(--font-mono);
+  color: var(--slate);
+}
+
+/* =========================
+   SKILLS
+========================= */
+.skills {
+  background: var(--paper-alt);
+  border-block: 1px solid var(--paper-line);
+}
+
+.skill-group {
+  background: var(--white);
+  border: 1px solid var(--paper-line);
+  border-radius: 12px;
+}
+
+.skill-group h3 {
+  font: 13px var(--font-mono);
+  text-transform: uppercase;
+  color: var(--slate);
+}
+
+.tag {
+  display: inline-block;
+  padding: 3px 8px;
+  font: 10.5px var(--font-mono);
+  background: var(--indigo-soft);
+  color: #3f42c0;
+  border-radius: 5px;
+}
+
+.tag.mint {
+  background: #e4f8f0;
+  color: #1e8f6c;
+}
+
+/* =========================
+   EXPERIENCE
+========================= */
+.experience {
+  background: var(--paper);
+}
+
+.timeline {
+  border-left: 2px solid var(--paper-line);
+  margin-left: 4px;
+}
+
+.tl-item {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.tl-item::before {
+  content: attr(data-index);
+  position: absolute;
+  left: -2px;
+  top: 0;
+  transform: translateX(-50%);
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--ink);
+  color: var(--mint);
+  border: 3px solid var(--paper);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 12px var(--font-mono);
+}
+
+.tl-role {
+  font: 600 1.2rem var(--font-display);
+}
+
+.tl-date {
+  font: 12px var(--font-mono);
+  color: var(--slate);
+}
+
+.tl-company {
+  color: var(--indigo);
+  font-weight: 600;
+}
+
+/* =========================
+   PROJECTS
+========================= */
+.projects {
+  background: var(--paper-alt);
+  border-block: 1px solid var(--paper-line);
+}
+
+.project-card {
+  background: var(--white);
+  border: 1px solid var(--paper-line);
+  border-radius: 14px;
+  overflow: hidden;
+  transition: 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px -18px rgba(20, 23, 31, 0.25);
+}
+
+.project-title {
+  font: 600 1.125rem var(--font-display);
+}
+
+.project-desc {
+  color: var(--slate);
+}
+
+/* unified tag system */
+.project-tags span {
+  display: inline-block;
+  padding: 3px 8px;
+  font: 10.5px var(--font-mono);
+  border-radius: 5px;
+  background: var(--paper-alt);
+  border: 1px solid var(--paper-line);
+  color: var(--slate);
+}
+
+.project-links a {
+  color: var(--indigo);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.project-links a:hover {
+  text-decoration: underline;
+}
+
+/* thumbnails */
+.thumb-1 {
+  background: linear-gradient(135deg, #5b5fef, #3a3dbe);
+}
+
+.thumb-2 {
+  background: linear-gradient(135deg, #2fbe8f, #1c8f68);
+}
+
+.thumb-3 {
+  background: linear-gradient(135deg, #2b3040, #14171f);
+}
+
+/* =========================
+   EDUCATION
+========================= */
+.education {
+  background: var(--paper);
+}
+
+.edu-card {
+  background: var(--ink);
+}
+
+.edu-card h3 {
+  font: 600 1.35rem var(--font-display);
+}
+
+.edu-card p {
+  color: #aeb4c2;
+}
+
+.edu-badge {
+  background: rgba(47, 190, 143, 0.15);
+  border: 1px solid rgba(47, 190, 143, 0.35);
+  color: var(--mint);
+}
+
+/* =========================
+   CONTACT / FOOTER
+========================= */
+footer {
+  background: var(--ink);
+  color: var(--white);
+}
+
+.contact-head h2 {
+  font-family: var(--font-display);
+}
+
+.contact-head p {
+  color: #a7adbb;
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--ink-line);
+  color: #a7adbb;
+}
